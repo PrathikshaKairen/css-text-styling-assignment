@@ -5,10 +5,9 @@
 }
 
 body {
-  font-size:`````````  10px;
+  font-size: 10px;
   line-height: 1.5;
-  font-family: '```
-```Merriweather', serif;
+  font-family: 'Merriweather', serif;
   color: #333;
 }
 
@@ -21,61 +20,17 @@ h1, h2 {
 
 h2 {
   font-size: 2rem;
-  margin-top```  10px;
-  line-height: 1.5;
-  font-family: 'Merriweather', serif;
-  color: #333;
-}
-
-h1, h2 {
-  font-family: 'Merriwe: 2rem;
-  text-indent: 20px;
-}
-
-p {
-  font-size: 1.2rem;
-  line-height: 1.5ather Sans', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 0.05em;
-}
-
-h2 {
-  font-;
-  letter-spacing: 0.02em;
-  word-spacing: size: 2rem;
   margin-top: 2rem;
-  text-indent0.05em;
   text-indent: 20px;
-}
-
-a {
-  color: #4a86e8;
-  text-: 20px;
 }
 
 p {
   font-size: 1.2rem;
   line-height: 1.5;
-  letter-spacing: decoration: underline;
-  outline: none;
-}
-
-a:hover, a:focus {
-  text-decoration: none;
-}
-
-a:active0.02em;
+  letter-spacing: 0.02em;
   word-spacing: 0.05em;
   text-indent: 20px;
-}```
-``` {
-  color: #005ea5;
 }
-
-ul {
-  list-style-image: url('external-link-52.png');
-  margin-left: 0
 
 a {
   color: #4a86e8;
@@ -83,13 +38,7 @@ a {
   outline: none;
 }
 
-a:;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 0.5rem;
-}hover, a:focus {
+a:hover, a:focus {
   text-decoration: none;
 }
 
@@ -98,24 +47,8 @@ a:active {
 }
 
 ul {
-  list-
-
-ul li:before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-rightstyle-image: url('external-link-52.png');
-  margin-left: 0;: 0.5rem;
-  background-image: url('external-link-52.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between
+  list-style-image: url('external-link-52.png');
+  margin-left: 0;
   padding-left: 0;
 }
 
@@ -123,26 +56,12 @@ ul li {
   margin-bottom: 0.5rem;
 }
 
-ul li:;
-  height: 100%;
-}
-
-nav li {
-  margin-bottom: 1rem;
-}
-
-nav a {
-  paddingbefore {
+ul li:before {
   content: '';
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-right: 0: 0.5rem;
-  border-radius: 0.25rem;
-  background-color: #f2f2f2;
-  color: #333;
-  font-size: 1.2rem;
-  text.5rem;
+  margin-right: 0.5rem;
   background-image: url('external-link-52.png');
   background-repeat: no-repeat;
   background-position: center center;
@@ -150,12 +69,25 @@ nav a {
 
 nav ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  height: 100%;
+  align-items: center;
+  height: 3rem;
+  padding: 0 1rem;
+  background-color: #333;
 }
 
-nav li-align: center;
+nav li {
+  margin-bottom: 0;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 nav a:hover, nav a:focus {
@@ -166,47 +98,59 @@ nav a:active {
   background-color: #d9d9d9;
 }
 
-@media screen and (min-width: 7 {
-  margin-bottom: 1rem;
+section {
+  margin-top: 2rem;
 }
 
-nav a {
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-  background-color: #68px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  p {
-    font-size: 1f2f2f2;
-  color: #333;
- .5rem;
-  }
-
-  nav {
-    width: 200px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    padding: 2rem;
-    border-right: 1px solid #ccc;
-  font-size: 1.2rem;
-  text-align: center;
+section h2 {
+  text-align: left;
 }
 
-nav a:hover, nav a:focus {
-  background-color: #e6e6e6;
+section ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 2rem;
 }
 
-nav a:active { }
-
-  nav a {
-    padding: 1rem;
-  }
+section li {
+  margin-bottom: 0.5rem;
 }
+
+section li:before {
+  content: '•';
+  margin-right: 0.5rem;
+}
+
+section li:first-child:before {
+  content: '';
+  margin-right: 0.5rem;
+}
+
+section ul li a {
+  color: #4a86e8;
+  text-decoration: none;
+}
+
+section ul li a:hover, section ul li a:focus {
+  text-decoration: underline;
+}
+
+section ul li a:active {
+  color: #005ea5;
+}
+
+section ul li:last-child {
+  margin-bottom: 0;
+}
+
+section ul li:last-child a {
+  text-decoration: none;
+}
+
+section ul li:last-child a:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+ 
